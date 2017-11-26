@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  parameter-store:
+    AWS_DEFAULT_REGION: "/MEAN/AWS_DEFAULT_REGION"
+		
 phases:
   install:
     commands:
@@ -7,7 +11,8 @@ phases:
       - npm install
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --region $AWS_DEFAULT_REGION)
   build:
     commands:
       - echo Build started on `date`
