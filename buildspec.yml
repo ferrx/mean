@@ -8,9 +8,9 @@ phases:
   install:
     commands:
       - echo Installing NPM...
-      - curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash -
-      - export NVM_DIR="$HOME/.nvm"
-      - yum install nodejs --enablerepo=nodesource
+      - sudo apt-get install nodejs
+      - sudo apt-get install npm
+      - sudo ln -s /usr/bin/nodejs /usr/bin/node
       - echo Installing NPM Packages
       - npm install
   pre_build:
