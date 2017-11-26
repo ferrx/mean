@@ -7,7 +7,11 @@ env:
 phases:
   install:
     commands:
-      - echo Installing...
+      - echo Installing NPM...
+			- curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+			- . ~/.nvm/nvm.sh
+			- nvm install 6.11.5
+			- echo Installing NPM Packages
       - npm install
   pre_build:
     commands:
