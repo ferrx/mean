@@ -7,7 +7,10 @@ env:
 phases:
   install:
     commands:
-      - printenv 
+      - echo Show Env Vars...
+      - printenv
+      - echo Ensure the latest awscli is installed...
+      - sudo pip install --upgrade awscli
       - echo Installing NPM...
       - sudo apt-get update 
       - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
