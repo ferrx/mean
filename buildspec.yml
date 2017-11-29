@@ -3,12 +3,11 @@ version: 0.2
 env:
   parameter-store:
     AWS_DEFAULT_REGION: "/MEAN/AWS_DEFAULT_REGION"
-    MEGA_ID: "/mean/megaid"
     
 phases:
   install:
     commands:
-      - echo $MEGA_ID
+      - echo $megakey
       - echo Installing NPM...
       - sudo apt-get update 
       - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
