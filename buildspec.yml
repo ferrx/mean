@@ -3,7 +3,7 @@ version: 0.2
 env:
   parameter-store:
     AWS_DEFAULT_REGION: "/MEAN/AWS_DEFAULT_REGION"
-		MEGA_ID: "/mean/megaid"
+    MEGA_ID: "/mean/megaid"
     
 phases:
   install:
