@@ -7,7 +7,7 @@ env:
 phases:
   install:
     commands:
-      - echo $megakey
+      - printenv 
       - echo Installing NPM...
       - sudo apt-get update 
       - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
