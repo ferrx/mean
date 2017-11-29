@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   parameter-store:
-    AWS_DEFAULT_REGION: "/MEAN/AWS_DEFAULT_REGION"
+    AWS_DEFAULT_REGION3: "/MEAN/AWS_DEFAULT_REGION"
     
 phases:
   install:
